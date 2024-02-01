@@ -126,7 +126,44 @@ class _UserProfileState extends State<UserProfile> {
                   ],
                 ),
                 const SizedBox(height: 12),
-                const Button()
+                SizedBox(
+                  width: double.maxFinite,
+                  child: Button(
+                    text: "Follow",
+                    textColor: Colors.white,
+                    color: Colors.blue,
+                  ),
+                ),
+                const SizedBox(height: 9),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Button(
+                          text: "Message",
+                          color: Colors.grey.shade300,
+                          textColor: Colors.black),
+                    ),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Button(
+                          text: "Subscribe",
+                          color: Colors.grey.shade300,
+                          textColor: Colors.black),
+                    ),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Button(
+                          text: "Contact",
+                          color: Colors.grey.shade300,
+                          textColor: Colors.black),
+                    ),
+                    const SizedBox(width: 6),
+                    Button(
+                        icon: Icons.group_add_sharp,
+                        color: Colors.grey.shade300,
+                        textColor: Colors.black),
+                  ],
+                )
               ],
             ),
           )
