@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_user/components/UserProfil/Header.dart';
 
 import 'package:instagram_user/config/imports.dart';
 
@@ -43,7 +42,7 @@ class _UserProfileState extends State<UserProfile> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          UserPeofileHeader(),
+          const UserPeofileHeader(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             child: Column(
@@ -150,7 +149,7 @@ class _UserProfileState extends State<UserProfile> {
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     ));
