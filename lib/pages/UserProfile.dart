@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_user/components/UserProfil/Header.dart';
 
 import 'package:instagram_user/config/imports.dart';
 
@@ -42,24 +43,7 @@ class _UserProfileState extends State<UserProfile> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              children: [
-                ProfileImage(img: NetworkImages.dog, radius: 35),
-                const SizedBox(width: 60),
-                Row(
-                  children: [
-                    Statics(text: "Posts", count: "451"),
-                    const SizedBox(width: 24),
-                    Statics(text: "Followers", count: "3.051"),
-                    const SizedBox(width: 24),
-                    Statics(text: "Folowing", count: "1.451"),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          UserPeofileHeader(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             child: Column(

@@ -23,3 +23,4 @@ export 'package:instagram_user/components/base/ProfileImage.dart';
 export 'package:instagram_user/utilis/helpers.dart';
 export 'package:instagram_user/components/home/HomeStoriesItem.dart';
 export 'package:instagram_user/components/base/Button.dart';
+export 'package:instagram_user/components/UserProfil/Header.dart';
